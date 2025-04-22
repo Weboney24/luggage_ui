@@ -1,6 +1,7 @@
 import { createBrowserRouter } from "react-router-dom";
 import User_layout from "../components/layout/User_layout";
 import Home from "../pages/home/Home";
+import Scanner from "../pages/Scanner";
 
 let client_routes = [
   {
@@ -12,6 +13,11 @@ let client_routes = [
         element: <Home />,
       },
     ],
+  },
+  {
+    path: "/barcodescanner",
+    element: <User_layout />,
+    children: [{ path: "/barcodescanner", element: <Scanner /> }],
   },
 ];
 
