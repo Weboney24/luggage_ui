@@ -1,16 +1,20 @@
-import React from 'react'
+import React from "react";
 import Nav from "../nav/Nav";
 import Foot from "../foot/Foot";
-import { Outlet } from 'react-router-dom';
+import { Outlet } from "react-router-dom";
 
 const User_layout = () => {
   return (
-    <div>
-          <Nav />
-          <Outlet/>
-          <Foot/>
-    </div>
-  )
-}
+    <div className="min-h-screen flex flex-col">
+      <Nav />
 
-export default User_layout
+      <div className="flex-grow">
+        <Outlet />
+      </div>
+
+      <Foot />
+    </div>
+  );
+};
+
+export default User_layout;
