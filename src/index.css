@@ -12,3 +12,30 @@
     @apply flex justify-center items-center;
   }
 }
+
+/* index.css */
+.custom-select-file {
+  height: 50px;
+  padding: 0 20px;
+  border-radius: 6px;
+
+  font-size: 14px;
+  font-family: inherit;
+  font-weight: 600;
+
+  background-color: #2b2a29;
+  color: #ffffff;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  box-shadow: none;
+}
+
+/* .custom-select-file:hover,
+.custom-select-file:focus {
+  background-color: #df7401;
+  border-color: #e60000;
+  color: #fff;
+} */

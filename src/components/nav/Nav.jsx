@@ -15,7 +15,7 @@ const Nav = () => {
   }, []);
 
   return (
-    <div className="h-[60px] w-screen text-sm bg-primary center_div justify-between sticky top-0 !z-50 px-5 md:px-10 lg:px-20 flex">
+    <div className="h-[60px] w-full text-sm bg-primary center_div justify-between sticky top-0 !z-50 px-5 md:px-10 lg:px-20 flex">
       {/* Left side - Logo */}
       <div className="flex items-center justify-start px-0">
         <Link to="/" className="lg:w-[31%] flex justify-start items-start">
