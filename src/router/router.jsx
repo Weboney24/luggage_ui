@@ -2,6 +2,10 @@ import { createBrowserRouter } from "react-router-dom";
 import User_layout from "../components/layout/User_layout";
 import Home from "../pages/home/Home";
 import Scanner from "../pages/Scanner";
+import Login from "../admin/pages/auth/Login";
+import Layout from "../admin/components/layout/Layout";
+import Dashboard from "../admin/pages/home/Dashboard";
+import ExcelUpload from "../admin/pages/home/ExcelUpload";
 import UserDetails from "../pages/UserDetails";
 
 let client_routes = [
@@ -27,6 +31,23 @@ let client_routes = [
   },
 ];
 
-const router = createBrowserRouter([...client_routes]);
+let admin_routes = [
+  {
+    path: "/login",
+    element: <Login />,
+  },
+  {
+    path: "/admin-dashboard",
+    element: <Layout />,
+    children: [{ path: "/admin-dashboard", element: <Dashboard /> }],
+  },
+  {
+    path: "/admin-uploadexcelsheet",
+    element: <Layout />,
+    children: [{ path: "/admin-uploadexcelsheet", element: <ExcelUpload /> }],
+  },
+];
+
+const router = createBrowserRouter([...client_routes, ...admin_routes]);
 
 export default router;
