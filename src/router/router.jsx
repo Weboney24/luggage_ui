@@ -6,6 +6,7 @@ import Login from "../admin/pages/auth/Login";
 import Layout from "../admin/components/layout/Layout";
 import Dashboard from "../admin/pages/home/Dashboard";
 import ExcelUpload from "../admin/pages/home/ExcelUpload";
+import UserDetails from "../pages/UserDetails";
 
 let client_routes = [
   {
@@ -21,7 +22,12 @@ let client_routes = [
   {
     path: "/barcodescanner",
     element: <User_layout />,
-    children: [{ path: "/barcodescanner", element: <Scanner /> }],
+    children: [{ path: "", element: <Scanner /> }],
+  },
+  {
+    path: "/scanned-result",
+    element: <User_layout />,
+    children: [{ path: "/scanned-result", element: <UserDetails /> }],
   },
 ];
 

@@ -1,5 +1,3 @@
-import Icon_Helper from "./Icon_Helper";
-
 export const tickets = [
   {
     name: "John Doe",
@@ -50,26 +48,5 @@ export const tickets = [
     extra_luggage: false,
     extra_luggage_weight: 0,
     extra_luggage_price: 0,
-  },
-];
-
-export const Admin_side_menu = [
-  {
-    id: 1,
-    name: "Dashboard",
-    icon: Icon_Helper.ADMIN_DASHBOARD,
-    to: "/admin-dashboard",
-  },
-  {
-    id: 2,
-    name: "Excel",
-    icon: Icon_Helper.ADMIN_UPLOAD,
-    to: "/admin-uploadexcelsheet",
-  },
-  {
-    id: 3,
-    name: "User",
-    icon: Icon_Helper.USER_ICON,
-    to: "/user_data",
   },
 ];
