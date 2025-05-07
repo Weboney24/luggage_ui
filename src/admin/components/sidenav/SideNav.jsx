@@ -11,12 +11,12 @@ const SideNav = ({ collapsed }) => {
         <img src={Image_Helper.SUBHAM_LOGO} alt="LOGO" className={`transition-all duration-300 ${collapsed ? "hidden" : "block"} w-200px`} />
       </div>
 
-       <div className="mt-6 flex flex-col divide-y divide-white">
+      <div className="mt-6 flex flex-col divide-y divide-white">
         {Admin_side_menu.map((res, index) => {
           const Icon = res.icon;
           return (
             <Link to={res.to} key={index} className="flex items-center gap-3 px-4 py-3 hover:bg-primary transition-colors">
-              <Icon size={18}  />
+              <Icon size={18} />
               {!collapsed && <span className="text-lg font-title font-bold">{res.name}</span>}
             </Link>
           );
