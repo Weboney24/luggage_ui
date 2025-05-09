@@ -1,6 +1,6 @@
 import React from "react";
 import { useLocation } from "react-router-dom";
-import { tickets } from "../helper/data_Helper";
+import { tickets } from "../helper/data_helper";
 
 const UserDetails = () => {
   const { state } = useLocation();
