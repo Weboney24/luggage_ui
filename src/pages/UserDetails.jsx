@@ -1,9 +1,13 @@
 import React, { useEffect, useState } from "react";
 import { useLocation } from "react-router-dom";
+
+import { tickets } from "../helper/data_helper";
+
 import { getSingleUserData } from "../config/api_helper";
 import _ from "lodash";
 import Icon_Helper from "../helper/Icon_Helper";
 import { Spin } from "antd";
+
 
 const UserDetails = () => {
   const { state } = useLocation();

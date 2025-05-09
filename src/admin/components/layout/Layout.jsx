@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Topnav from "../topnav/Topnav";
+import Topnav from "../topnav/TopNav";
 import SideNav from "../sidenav/SideNav";
 import { Outlet } from "react-router-dom";
 
