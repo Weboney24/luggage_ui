@@ -14,7 +14,6 @@ const Login = () => {
   const dispatch = useDispatch();
   const onFinish = async (values) => {
     try {
-      console.log(values);
       const result = await admin_login(values);
       if (_.isEmpty(_.get(result, "data.data", []))) {
         return ERROR_NOTIFICATION("Invalid credentials");
